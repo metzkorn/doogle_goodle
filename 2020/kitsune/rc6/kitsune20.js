@@ -40355,7 +40355,7 @@ es.prototype.start = function() {
                 OPPONENT_COUNT: 6,
                 OPPONENT_MAX_SPEED: 7,
                 OPPONENT_MIN_SPEED: 4,
-                SPAWNERS: [], //[this.ha.dL, this.ha.ZK],
+                SPAWNERS: [this.ha.dL, this.ha.ZK],
                 OBSTACLES: []//[this.ha.kY, this.ha.lY]
                 // OPPONENT_COUNT: 8,
                 // OPPONENT_MAX_SPEED: 8.4,
