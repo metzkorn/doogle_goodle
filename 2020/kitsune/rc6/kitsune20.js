@@ -40351,11 +40351,11 @@ es.prototype.start = function() {
             break;
         default:
             this.kb = {
-                TOTAL_METER: 400,
+                TOTAL_METER: 6e10,
                 OPPONENT_COUNT: 6,
                 OPPONENT_MAX_SPEED: 7,
                 OPPONENT_MIN_SPEED: 4,
-                SPAWNERS: [this.ha.dL, this.ha.ZK],
+                SPAWNERS: [],
                 OBSTACLES: []//[this.ha.kY, this.ha.lY]
                 // OPPONENT_COUNT: 8,
                 // OPPONENT_MAX_SPEED: 8.4,
