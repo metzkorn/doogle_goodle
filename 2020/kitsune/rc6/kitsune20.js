@@ -4275,7 +4275,7 @@ var Xh = function(b) {
     D.call(this, b);
     this.Qw = b.pos || B(0, 0);
     this.Aab = b.ease || .6;
-    this.speed = b.speed;
+    this.speed = b.speed || 60;
     this.Baa = !0;
     this.viewport = null
 };
@@ -38937,7 +38937,7 @@ yq.prototype.tick = function() {
             m.state = 2;
             b.ha.oc.push(new Wo(b.ha, [qq, oq]));
             var h = b.ha;
-            Q(h, ug).visible = !0;
+            Q(h, ug).visible = !0; //ug and Fg functions 
             Q(h, Fg).visible = !0
         })
     } else 2 == m.state && (c = k.ec.get(Dg), c.kC && c.kC.ec.get(Cg).mY ||
@@ -39009,6 +39009,7 @@ Cq.prototype.tick = function() {
         m = Q(this.ha, Yh),
         k = m.ec.get(Yh);
     b = Bq(b, m, this.ha.Ca);
+    b = 0;
     g.Qw = b.sub(k.offset)
 };
 var Dq = function() {
@@ -39020,7 +39021,7 @@ Dq.prototype.tick = function() {
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
     // (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
-    (m = Math.min(m, 10000) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
+    (m = Math.min(g.Aab*m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(3840, 2160); // Originally 960, 540
     b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
