@@ -42336,9 +42336,9 @@ Ot.prototype.tick = function() { // I think this is climbing
         C(m) && (g = g.sub(this.kb.velocity), m = ih(c, m), k = Math.max(0, k - b), this.Ca.TB ? (c = Math.min(.75, k), k = (25 - Math.min(3 + b, 25)) / 25, a = 30 * k, a = kh(this.kb.velocity) + ch(-a, m, a), g = this.kb.velocity.add(lg(g, c)), b = lg(oh(a), b + Math.max(c, 0)), m = k * ch(0, fh(180, Math.abs(m), 100), 1), this.kb.velocity = isNaN(b.x) || isNaN(b.y) ? g : gh(g, m, b)) : (b = Math.min(.07 * 5, k), 0 < b && (b = this.kb.velocity.add(lg(g, b)), this.kb.velocity = b)))));
     b = this.ha.Cc.ak;
     g = Q(this.ha, Xi).ec.get(Xi);
-    g.world.gravity.set(0, 0, -50); // experimenting with gravity in skateboard
+    g.world.gravity.set(0, 0, -50); // 300
     0 < this.Ca.Bb && (this.Ca.Bb++, b.kb[4] &&
-        g.world.gravity.set(0, 0, -10));
+        g.world.gravity.set(0, 0, -10)); //210
     0 < this.Ca.Ca && this.Ca.Ca++;
     !b.Ca[4] || 0 < this.Ca.kb || 0 < this.Ca.sK || (Pt(this, "action"), this.Ca.TB && Pt(this, "air"), 0 != this.Ca.Bb && 0 != this.Ca.Ca) || (this.kb.pC = 6, this.oc.z += 1, b = b.ha, this.Ca.Ca && 0 < C(b) && (this.kb.velocity = kg(b, 4)), this.Ca.ha && Qt(this), 0 == this.Ca.Bb ? (this.Ca.Bb = 1, A.s1a.play()) : this.Ca.Ca || (this.Ca.Ca = 1, A.r1a.play()));
     Tt(this);
@@ -42551,7 +42551,7 @@ var Zt = function() {
     X.apply(this, arguments)
 };
 q(Zt, X);
-Zt.prototype.tick = function() { // I think this is font
+Zt.prototype.tick = function() { // I think this is font in skateboard apparently
     var b = Q(this.ha, ak).ec.get(ak),
         g = Q(this.ha, ck);
     g.time.text = lk(b.CN);
