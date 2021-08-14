@@ -39021,7 +39021,7 @@ Dq.prototype.tick = function() {
         m = C(g.Qw.sub(zj(b)));
     (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
-    b = b.globalToLocal(960, 540);
+    b = b.globalToLocal(1920, 1080); // Originally 960, 540
     b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
     g.viewport = b
 };
