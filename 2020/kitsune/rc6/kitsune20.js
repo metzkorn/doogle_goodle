@@ -4275,7 +4275,7 @@ var Xh = function(b) {
     D.call(this, b);
     this.Qw = b.pos || B(0, 0);
     this.Aab = b.ease || .6;
-    this.speed = 0; //b.speed || 60;
+    this.speed = b.speed || 60;
     this.Baa = !0;
     this.viewport = null
 };
@@ -39019,11 +39019,12 @@ Dq.prototype.tick = function() {
     var b = Q(this.ha, Xh),
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
-    (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
+    // (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
+    (m = Math.min(10000, 10000) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(3840, 2160); // Originally 960, 540
-   // b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
-    b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map
+    b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
+   // b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map // This didnt do anything
     g.viewport = b
 };
 var Eq = function() {
