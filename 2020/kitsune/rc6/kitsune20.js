@@ -39009,9 +39009,9 @@ Cq.prototype.tick = function() {
         m = Q(this.ha, Yh),
         k = m.ec.get(Yh);
     b = Bq(b, m, this.ha.Ca);
-    let playerpos = localStorage.getItem("KITSUNE_PLAYER_POS");
-    g.Qw = playerpos;
-    //g.Qw = b.sub(k.offset) // k.offset
+    //let playerpos = window.localStorage.getItem("KITSUNE_PLAYER_POS");
+    //g.Qw = playerpos;
+    g.Qw = b.sub(k.offset) // k.offset
 };
 var Dq = function() {
     X.apply(this, arguments)
