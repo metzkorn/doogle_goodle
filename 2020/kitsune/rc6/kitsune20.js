@@ -38983,8 +38983,8 @@ Aq.prototype.tick = function() {
         var k = m.ec.get(Gg);
         k.yY || (k.yY = !0, k.Daa = zj(m), k.Hpa = zj(b));
         var c = k.Hpa.sub(zj(b));
-        m.x = 0; //k.Daa.x - k.Vpa.x * c.x;
-        m.y = 0;//k.Daa.y - k.Vpa.y * c.y
+        m.x = k.Daa.x - k.Vpa.x * c.x;
+        m.y = k.Daa.y - k.Vpa.y * c.y
     }
 };
 var Bq = function(b, g, m) {
