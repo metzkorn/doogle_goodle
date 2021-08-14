@@ -4275,7 +4275,7 @@ var Xh = function(b) {
     D.call(this, b);
     this.Qw = b.pos || B(0, 0);
     this.Aab = b.ease || .6;
-    this.speed = b.speed || 60;
+    this.speed = b.speed;
     this.Baa = !0;
     this.viewport = null
 };
@@ -39020,7 +39020,7 @@ Dq.prototype.tick = function() {
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
     // (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
-    (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
+    (m = Math.min(m, 10000) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(3840, 2160); // Originally 960, 540
     b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
