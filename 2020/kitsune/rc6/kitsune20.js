@@ -39021,8 +39021,9 @@ Dq.prototype.tick = function() {
         m = C(g.Qw.sub(zj(b)));
     (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
-    b = b.globalToLocal(1920, 1080); // Originally 960, 540
-    b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
+    b = b.globalToLocal(3840, 2160); // Originally 960, 540
+   // b = new createjs.Rectangle(m.x, m.y, b.x - m.x, b.y - m.y);
+    b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map
     g.viewport = b
 };
 var Eq = function() {
