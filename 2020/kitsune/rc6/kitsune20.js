@@ -39009,8 +39009,7 @@ Cq.prototype.tick = function() {
         m = Q(this.ha, Yh),
         k = m.ec.get(Yh);
     b = Bq(b, m, this.ha.Ca);
-    b = 0;
-    g.Qw = b.sub(k.offset)
+    g.Qw = b.sub(0)
 };
 var Dq = function() {
     X.apply(this, arguments)
