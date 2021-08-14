@@ -4275,7 +4275,7 @@ var Xh = function(b) {
     D.call(this, b);
     this.Qw = b.pos || B(0, 0);
     this.Aab = b.ease || .6;
-    this.speed = b.speed || 60;
+    this.speed = b.speed;
     this.Baa = !0;
     this.viewport = null
 };
