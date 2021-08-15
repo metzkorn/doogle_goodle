@@ -38994,7 +38994,7 @@ var Bq = function(b, g, m) {
         k = b.localToLocal(0, 0, m);
         m = b.localToLocal(c.x, c.y, m);
         g = g.ec.get(aj);
-        g = B(m.x - k.x, m.y - k.y - (g ? .6 * g.z * 3 : 0));
+        g = B(m.x - k.x, m.y - k.y - (g ? .6 * g.z * 10000 : 0));
         .1 > Math.abs(g.x) && (g.x = 0);
         .1 > Math.abs(g.y) && (g.y = 0);
         return B(b.x - g.x, b.y - g.y)
