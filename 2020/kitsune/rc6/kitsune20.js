@@ -39027,7 +39027,7 @@ Dq.prototype.tick = function() {
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(960, 540); // Originally 960, 540
    // b = new createjs.Rectangle(g.Qw.x/(-3), g.Qw.y/(-3), b.x - m.x, b.y - m.y)
-    b = new createjs.Rectangle(m.x, m.y, 100*(b.x - m.x), 100*(b.y - m.y));
+    b = new createjs.Rectangle(m.x, m.y, (b.x - m.x), (b.y - m.y));
    // b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map // This didnt do anything
     g.viewport = b
 };
@@ -39489,7 +39489,7 @@ gr.prototype.tick = function() {
             h = Math.round(8 * C(n)) / 8,
             d = mh(n),
             roll_speed = 20, 
-            walk_speed = 2000; // this gets modified by h. I don't remember what C does. TODO: Look at what C does. 
+            walk_speed = 12; // this gets modified by h. I don't remember what C does. TODO: Look at what C does. 
             ;
            // console.log("gr function triggered: k.velocity is:" + k.velocity)
         0 < m.Jaa ? m.Jaa-- : 0 < C(n) ? a.Ca[4] ? (Nj(g, "roll", b.ha), m.Jaa = 9, k.velocity = lg(n, roll_speed), c.direction = d, A.uja.play()) : (Nj(g, "walk", b.ha), k.velocity = lg(n, walk_speed * h), c.direction = d) : (Nj(g, "idle", b.ha), k.velocity = B(0, 0))
