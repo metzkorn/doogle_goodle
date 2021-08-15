@@ -39418,7 +39418,7 @@ var er = function(b) { // b is the player?
             c.ec.get(Xh).Baa = !1;
             createjs.Tween.get(c, {
                 useTicks: !0
-            }).wait(0).to({ // used to be 18
+            }).wait(18).to({ // used to be 18, and useless in rugby
                 x: k.x,
                 y: k.y
             }, 30, createjs.Ease.quadInOut).call(function() {
