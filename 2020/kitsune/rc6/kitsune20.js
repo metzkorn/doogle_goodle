@@ -39018,6 +39018,7 @@ var Dq = function() {
 };
 q(Dq, X);
 Dq.prototype.tick = function() {
+    console.log(this);
     var b = Q(this.ha, Xh),
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
@@ -39483,7 +39484,7 @@ gr.prototype.tick = function() {
             k = g.ec.get(M), // this is definitely velocity related. 
             c = g.ec.get(bi),
             a = b.ha.Cc.ak,
-            n = a.ha, // aha is coefficient in front of x y when calculating the speed update
+            n = a.ha, // a.ha is coefficient in front of x y when calculating the speed update
             h = Math.round(8 * C(n)) / 8,
             d = mh(n),
             roll_speed = 20, 
