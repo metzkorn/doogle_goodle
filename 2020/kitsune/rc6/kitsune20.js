@@ -39027,7 +39027,7 @@ Dq.prototype.tick = function() {
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(960, 540); // Originally 960, 540
    // b = new createjs.Rectangle(g.Qw.x/(-3), g.Qw.y/(-3), b.x - m.x, b.y - m.y)
-    b = new createjs.Rectangle(m.x, m.y, 0, 0);
+    b = new createjs.Rectangle(m.x, m.y, 100000, 100000);
    // b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map // This didnt do anything
     g.viewport = b
 };
