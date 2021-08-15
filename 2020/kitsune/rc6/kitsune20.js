@@ -38983,8 +38983,8 @@ Aq.prototype.tick = function() {
         var k = m.ec.get(Gg);
         k.yY || (k.yY = !0, k.Daa = zj(m), k.Hpa = zj(b));
         var c = k.Hpa.sub(zj(b));
-        m.x = k.Daa.x - k.Vpa.x * c.x;
-        m.y = k.Daa.y - k.Vpa.y * c.y
+        m.x = k.Daa.x - k.Vpa.x  100; //* c.x;
+        m.y = k.Daa.y - k.Vpa.y 100; // * c.y
     }
 };
 var Bq = function(b, g, m) {
@@ -39418,7 +39418,7 @@ var er = function(b) { // b is the player?
             c.ec.get(Xh).Baa = !1;
             createjs.Tween.get(c, {
                 useTicks: !0
-            }).wait(18).to({ // used to be 18, and useless in rugby
+            }).wait(0).to({ // used to be 18, speeds up warps
                 x: k.x,
                 y: k.y
             }, 30, createjs.Ease.quadInOut).call(function() {
