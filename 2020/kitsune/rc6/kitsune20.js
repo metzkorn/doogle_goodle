@@ -39023,7 +39023,7 @@ Dq.prototype.tick = function() {
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
     // (m = Math.min(g.Aab * m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
-    (m = Math.min(g.Aab*m, g.speed) / m) && g.Baa && (m = gh(zj(b), m, g.Qw), Aj(b, m));
+    (m = Math.min(g.Aab*m, g.speed) / m) && 1 && (m = gh(zj(b), m, g.Qw), Aj(b, m));
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(960, 540); // Originally 960, 540
    // b = new createjs.Rectangle(g.Qw.x/(-3), g.Qw.y/(-3), b.x - m.x, b.y - m.y)
@@ -39489,7 +39489,7 @@ gr.prototype.tick = function() {
             h = Math.round(8 * C(n)) / 8,
             d = mh(n),
             roll_speed = 20, 
-            walk_speed = 12; // this gets modified by h. I don't remember what C does. TODO: Look at what C does. 
+            walk_speed = 2000; // this gets modified by h. I don't remember what C does. TODO: Look at what C does. 
             ;
            // console.log("gr function triggered: k.velocity is:" + k.velocity)
         0 < m.Jaa ? m.Jaa-- : 0 < C(n) ? a.Ca[4] ? (Nj(g, "roll", b.ha), m.Jaa = 9, k.velocity = lg(n, roll_speed), c.direction = d, A.uja.play()) : (Nj(g, "walk", b.ha), k.velocity = lg(n, walk_speed * h), c.direction = d) : (Nj(g, "idle", b.ha), k.velocity = B(0, 0))
