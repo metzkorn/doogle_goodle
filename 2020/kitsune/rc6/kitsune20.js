@@ -39027,6 +39027,8 @@ Dq.prototype.tick = function() {
     m = b.globalToLocal(0, 0);
     b = b.globalToLocal(960, 540); // Originally 960, 540
    // b = new createjs.Rectangle(g.Qw.x/(-3), g.Qw.y/(-3), b.x - m.x, b.y - m.y)
+    m.x = g.Qw.x;
+    m.y = g.Qw.y; 
     b = new createjs.Rectangle(m.x, m.y, b.x-m.x, b.y-m.y);
    // b = new createjs.Rectangle(0, 0, 10000, 10000); // but what if this makes it so you can see the whole map // This didnt do anything
     g.viewport = b
@@ -39416,7 +39418,7 @@ var er = function(b) { // b is the player?
             c.ec.get(Xh).Baa = !1;
             createjs.Tween.get(c, {
                 useTicks: !0
-            }).wait(18).to({
+            }).wait(0).to({ // used to be 18
                 x: k.x,
                 y: k.y
             }, 30, createjs.Ease.quadInOut).call(function() {
