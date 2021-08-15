@@ -39018,7 +39018,7 @@ var Dq = function() {
 };
 q(Dq, X);
 Dq.prototype.tick = function() {
-    console.log(this);
+    // Dq {ha: $s, le: true}
     var b = Q(this.ha, Xh),
         g = b.ec.get(Xh),
         m = C(g.Qw.sub(zj(b)));
