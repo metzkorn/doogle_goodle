@@ -23676,7 +23676,7 @@ fs.prototype.tick = function () {
         g = Q(this.ha, rf).ec.get(rf);
     hit_object = b.ec.get(pf);  
     // if (Vr(b, this.ha) / 24 > this.ha.tb.TOTAL_METER && !this.Ea) {
-    if(hit_object.IN && !this.Ea) {
+    if((hit_object.IN || !hit_object.I4) && !this.Ea) {
         Vi(b, 1);
         b.ec.get(M).velocity = Ie(B(1, 0), C(b.ec.get(M).velocity) + g.tI);
         g.tI = 0;
